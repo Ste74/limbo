@@ -1,0 +1,24 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
+
+pkgname=manj-grub
+pkgver=1.1
+pkgrel=1
+pkgdesc="Manjaro grub-theme, based on Journey theme."
+url=""
+arch=('any')
+license=('GPL' 'CC-SA')
+depends=('grub' 'git')
+install=manj-grub.install
+source=("https://github.com/Ste74/Aur-binary-repo/releases/download/v1.0/Manj-Grub.zip" "manj-grub.install")
+
+package() {
+  
+  cd $srcdir
+  
+  find . -type f -exec install -D -m644 {} ${pkgdir}/usr/share/grub/themes/{} \;
+  
+}
+
+md5sums=('56f4ac1d09f67ebe947ded741d7140ab'
+         '7b2d50bd8c93353b8467694ded918e14')

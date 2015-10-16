@@ -1,0 +1,10 @@
+post_install() {
+
+sh install.sh
+ 
+  cat << _EOF 
+
+==> Theme installed 
+
+_EOF
+}
