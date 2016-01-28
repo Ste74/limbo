@@ -1,0 +1,21 @@
+--- a/data/org.pantheon.desktop.gala.gschema.xml.in.in
++++ b/data/org.pantheon.desktop.gala.gschema.xml.in.in
+@@ -231,6 +231,18 @@
+ 			<default>false</default>
+ 			<_summary>Disable all notifications</_summary>
+ 		</key>
++                <key type="s" name="apps">
++		        <default>''</default>
++		        <summary>Apps</summary>
++		</key>
++		<key type="b" name="default-bubbles">
++			<default>true</default>
++			<summary>Default bubbles</summary>
++		</key>
++		<key type="b" name="default-sounds">
++			<default>true</default>
++			<summary>Default sounds</summary>
++		</key>
+ 		<child name="applications" schema="org.pantheon.desktop.gala.notifications.application" />
+ 	</schema>
+ 
